@@ -22,9 +22,9 @@ public class Main {
         PrintMatrix(Rotated(colors, deg));
     }
 
-    public static void PrintMatrix(int[][] arr){
-        for (int i = 0; i< SIZE; i++) {
-            for (int j = 0; j< SIZE; j++) {
+    public static void PrintMatrix(int[][] arr) {
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 0; j < SIZE; j++) {
                 System.out.format("%4d", arr[i][j]);
             }
             System.out.println();
@@ -32,9 +32,9 @@ public class Main {
         System.out.println("_________________________________");
     }
 
-    public static int[][] Rotated(int[][] arr, int deg){
+    public static int[][] Rotated(int[][] arr, int deg) {
         int[][] rotatedColors = new int[SIZE][SIZE];
-        for (int k = 0; k < deg/90; k++) {
+        for (int k = 0; k < deg / 90; k++) {
             for (int i = 0; i < SIZE; i++) {
                 for (int j = 0; j < SIZE; j++) {
                     rotatedColors[i][j] = arr[SIZE - 1 - j][i];
